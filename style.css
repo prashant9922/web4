@@ -1,0 +1,335 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+body{
+    background-color:#ececec;
+}
+
+/*header start*/
+#header{
+    background-color: #2E2633;
+    text-align: center;
+}
+#header a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    transition: background-color 0.4s;
+}
+#header a:hover{
+    background-color: rgba(0,0,0,.1);
+}
+#header .logo{
+    font-size: 2em;
+}
+/*header ends*/
+
+/*intro start*/
+#intro{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background:#c94b4b;
+    background:-webkit-linear-gradient(to bottom, rgba(46,35,51,1), rgba(220,233,190,0.5)),url(5.jpg);
+    background: linear-gradient(to bottom, rgba(46,35,51,1), rgba(220,233,190,0.5)),url(5.jpg);
+    background-size: cover;
+    
+}
+#intro h1{
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+#intro p{
+    width: 80%;
+    margin: 0 auto;
+}
+/*intro ends*/
+
+/*aside start*/
+#aside{
+    display: none;
+}
+/*aside ends*/
+
+/*gallery starts*/
+#gallery{
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+}
+#gallery h2{
+    text-align: center;
+    font-size: 1.8em;
+    padding: 10px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+.img-container-1{
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+}
+.img-container-1 img{
+    width: 100%;
+    max-height: 400px;
+    min-height: 400px;
+    padding: 10px;
+    
+}
+.img-container{
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+}
+.img-container img{
+    width: 100%;
+    max-height: 400px;
+    min-height: 400px;
+    padding: 10px;
+    
+}
+/*gallery ends*/
+
+/*services start*/
+#services{
+    padding: 20px;
+    text-align: center;
+}
+#services h2{
+    font-size: 1.8em;
+    padding: 10px;
+
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+.service-container .service{
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,.1);
+    background-color: white;
+}
+.service-img{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+}
+.service-img img{
+    min-height: 100%;
+    max-height: 200px;
+    width: 100%;
+}
+.service h5{
+    font-size: 1.2em;
+    padding: 10px 0px;
+    text-align: left;
+    font-weight: bold;
+}
+.service .call-to-action a{
+    background-color: crimson;
+    color: white;
+    padding: 15px;
+    margin-top: 15px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    transition: background-color 0.4s;
+}
+.service .call-to-action a:hover{
+    background-color: #2E2633;
+}
+/*sercices ends*/
+
+/*About start*/
+#about{
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+}
+#about h2{
+    font-size: 1.8em;
+    padding: 10px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+#about p{
+    margin: 10px 0px;
+}
+/*about ends*/
+
+/*contact start*/
+#contact{
+    padding: 20px;
+    text-align: center;
+    background-color: aliceblue;
+}
+#contact h2{
+    font-size: 1.8em;
+    padding: 10px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+#contact form{
+    max-width: 600px;
+    margin: auto;
+}
+#contact label{
+    display: block;
+    margin: 15px 0px 5px 0px;
+    text-align: left;
+}
+#contact input,
+#contact textarea{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid transparent;
+    background-color: #ececec;
+    transition: background-color 0.4s, border 0.4s;
+}
+#contact input:hover,
+#contact textarea:hover,
+#contact input:focus,
+#contact textarea:focus{
+    border: 2px solid gray;
+    background-color: white;
+}
+/*contact ends*/
+
+/*footer start*/
+#footer{
+    font-size: 1.5em;
+    padding: 20px;
+    background-color: teal;
+    color: white;
+    text-align: center;
+}
+/*footer ends*/
+
+/*tablet view*/
+@media screen and (min-width: 650px){
+    #header ul{
+        display: flex;
+        align-items: center;
+    }
+    #header .logo{
+        margin-right: auto;
+    }
+    #intro{
+        height: 600px;
+    }
+    #aside{
+        display: block;
+        background-color: white;
+    }
+    #aside h2{
+     display: none;
+    }
+    #aside a{
+        padding: 20px;
+        display: block;
+        text-decoration: none;
+        color: black;    
+    }
+    #aside ul{
+        display: flex;
+        justify-content: center;
+    }
+    #gallery .gallery-container {
+        display: flex;
+    }
+    #services .service{
+        display: inline-block;
+        width: 40%;
+        margin: auto;
+        margin: 20px;
+    }
+    #about p{
+        max-width: 95%;
+        margin: auto;
+        padding: 20px;
+    }
+}
+/*tablet view ends*/
+
+/*laptop view start*/
+@media screen and (min-width: 1200px){
+    body{
+        display: grid;
+        max-width: 1300px;
+        margin: auto;
+        grid-template-columns: 200px 950px 150px;
+        grid-template-areas:  "header intro intro"
+                              "header gallery aside"
+                              "header services aside"
+                              "header about aside"
+                              "header contact aside"
+                              "footer footer footer"
+    }
+    #header{
+        grid-area: header;
+    }
+     #header ul{
+        display: flex;
+        flex-direction: column;
+    }
+    #intro{
+        grid-area: intro;
+    }
+    #aside{
+        grid-area: aside;
+        border-left: 1px solid rgba(0,0,0,.1);
+    }
+    #aside ul{
+        display: flex;
+        flex-direction: column;
+    }
+    #aside h2{
+        display: block;
+        margin-bottom: 20px;
+        padding: 15px;
+        font-size: 1.5em;
+    }
+    #gallery{
+        grid-area: gallery;
+    }
+    #services{
+        grid-area: services;
+    }
+    #about{
+        grid-area: about;
+    }
+    #contact{
+        grid-area: contact;
+    }
+    #footer{
+        grid-area: footer;
+    }
+}
+/*laptop view ends*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
